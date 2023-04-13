@@ -6,9 +6,9 @@ public class PointClass {
 
     public static void main(String[] args) {
         double x1 = 5;
-        double y1 = 0;
-        double x2 = 8;
-        double y2 = 0;
+        double y1 = 5;
+        double x2 = 5;
+        double y2 = 5;
 
         Point q = new Point();
 

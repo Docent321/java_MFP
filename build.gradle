@@ -1,3 +1,11 @@
 plugins {
     id 'java'
 }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.testng', name: 'testng', version: '7.7.1'
+}
