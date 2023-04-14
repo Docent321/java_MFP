@@ -6,35 +6,35 @@ import org.testng.annotations.Test;
 public class PointTests {
 
     @Test
-    public void testDistanceOnePoint00(){
-        Point p1 = new Point(0,0);
-        Point p2 = new Point(8,0);
+    public void testDistanceOnePoint00() {
+        Point p1 = new Point(0, 0);
+        Point p2 = new Point(8, 0);
 
-        Assert.assertEquals(p1.distance(p2),8.0);
+        Assert.assertEquals(p1.distance(p2), 8.0);
     }
 
     @Test
-    public void testDistancePointsIsNot00(){
-        Point p1 = new Point(1,1);
-        Point p2 = new Point(1,8);
+    public void testDistancePointsIsNot00() {
+        Point p1 = new Point(1, 1);
+        Point p2 = new Point(1, 8);
 
-        Assert.assertEquals(p1.distance(p2),7.0);
+        Assert.assertEquals(p1.distance(p2), 7.0);
     }
 
     @Test
-    public void testDistanceTwoPointsTheSame(){
-        Point p1 = new Point(1,1);
-        Point p2 = new Point(1,1);
+    public void testDistanceTwoPointsTheSame() {
+        Point p1 = new Point(1, 1);
+        Point p2 = new Point(1, 1);
 
-        Assert.assertEquals(p1.distance(p2),0.0);
+        Assert.assertEquals(p1.distance(p2), 0.0);
     }
 
     @Test
-    public void testDistanceNotInteger(){
-        Point p1 = new Point(2,3);
-        Point p2 = new Point(3,5);
+    public void testDistanceNotInteger() {
+        Point p1 = new Point(2, 3);
+        Point p2 = new Point(3, 5);
 
-        Assert.assertEquals(p1.distance(p2),2.23606797749979);
+        Assert.assertEquals(p1.distance(p2), 2.23606797749979);
     }
 
 }
