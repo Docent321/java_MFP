@@ -29,4 +29,12 @@ public class PointTests {
         Assert.assertEquals(p1.distance(p2),0.0);
     }
 
+    @Test
+    public void testDistanceNotInteger(){
+        Point p1 = new Point(2,3);
+        Point p2 = new Point(3,5);
+
+        Assert.assertEquals(p1.distance(p2),2.23606797749979);
+    }
+
 }
